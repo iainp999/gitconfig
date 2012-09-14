@@ -1,0 +1,32 @@
+[user]
+	name = Iain Potter
+	email = iain.potter@fore-front.co.uk
+[color]
+	diff = auto
+	status = auto
+	interactive = auto
+	branch = auto
+	ui = true
+[core]
+	editor = nano
+	autocrlf = false
+	safecrlf = true
+	excludesfile = /Users/ip/.gitignore
+	pager = /usr/bin/less
+[alias]
+	last = cat-file commit HEAD
+	week = log --all --pretty=format:\"%h %cd %s (%an)\" --since='7 days ago'
+	oneline = log --oneline
+	st = status
+	ci = commit
+	co = checkout
+	staged = diff --cached
+	unstaged = diff
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	aliases = config --get-regexp alias.*
+	svnci = svn dcommit
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lastline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --max-count=1
+	type = cat-file -t
+	dump = cat-file -p
