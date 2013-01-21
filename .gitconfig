@@ -8,7 +8,7 @@
 	branch = auto
 	ui = true
 [core]
-	editor = nano
+	editor = vi
 	autocrlf = false
 	safecrlf = true
 	excludesfile = /Users/ip/.gitignore
