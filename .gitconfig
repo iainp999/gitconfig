@@ -14,6 +14,7 @@
 	excludesfile = /Users/ip/.gitignore
 	pager = /usr/bin/less
 [alias]
+    m = checkout master
 	last = cat-file commit HEAD
 	week = log --all --pretty=format:\"%h %cd %s (%an)\" --since='7 days ago'
 	oneline = log --oneline
