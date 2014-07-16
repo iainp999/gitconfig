@@ -32,7 +32,8 @@
 	type = cat-file -t
 	dump = cat-file -p
   c = clone
-  p = pull
+  pl = pull
   f = fetch
   m = merge
   a = add
+  ps = push
