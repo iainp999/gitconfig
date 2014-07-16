@@ -14,7 +14,7 @@
 	excludesfile = /Users/ip/.gitignore
 	pager = /usr/bin/less
 [alias]
-    m = checkout master
+  cm = checkout master
 	last = cat-file commit HEAD
 	week = log --all --pretty=format:\"%h %cd %s (%an)\" --since='7 days ago'
 	oneline = log --oneline
@@ -31,3 +31,8 @@
 	lastline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --max-count=1
 	type = cat-file -t
 	dump = cat-file -p
+  c = clone
+  p = pull
+  f = fetch
+  m = merge
+  a = add
