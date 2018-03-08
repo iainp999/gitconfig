@@ -15,25 +15,26 @@
 	pager = /usr/bin/less
 [alias]
   cm = checkout master
-	last = cat-file commit HEAD
-	week = log --all --pretty=format:\"%h %cd %s (%an)\" --since='7 days ago'
-	oneline = log --oneline
-	st = status
-	ci = commit
-	co = checkout
-	staged = diff --cached
-	unstaged = diff
-	br = branch
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	aliases = config --get-regexp alias.*
-	svnci = svn dcommit
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	lastline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --max-count=1
-	type = cat-file -t
-	dump = cat-file -p
+  last = cat-file commit HEAD
+  week = log --all --pretty=format:\"%h %cd %s (%an)\" --since='7 days ago'
+  oneline = log --oneline
+  st = status
+  ci = commit
+  co = checkout
+  staged = diff --cached
+  unstaged = diff
+  br = branch
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  aliases = config --get-regexp alias.*
+  svnci = svn dcommit
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  lastline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --max-count=1
+  type = cat-file -t
+  dump = cat-file -p
   c = clone
   pl = pull
   f = fetch
   m = merge
   a = add
   ps = push
+  rhh = reset --hard HEAD
